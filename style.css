@@ -32,9 +32,6 @@ body {
   width: 100%;
 }
 
-.image-container > img {
-  width: 100%;
-}
 .goals-in-tech {
   display: grid;
   gap: 1em;
