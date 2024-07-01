@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 2px solid gray; */
 }
 
 @font-face {
@@ -26,6 +27,9 @@ body {
   background-color: #222;
   color: white;
   line-height: 1.5;
+  cursor: url(/cursor.cur), pointer;
+  max-width: 90rem;
+  width: 100%;
 }
 
 .image-container > img {
@@ -58,8 +62,26 @@ body {
 }
 
 header {
-  display: grid;
-  gap: 2em;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 1em;
+}
+
+/* For that block looking effect, aka brutalist */
+header > *,
+.goals-in-tech > * {
+  outline: 2px solid grey;
+}
+
+.goals-in-tech > p,
+.current-day,
+.current-time,
+.email {
+  padding: 0.5em;
 }
 
 footer {
@@ -89,9 +111,10 @@ footer > a:is(:hover, :active, :focus) {
   text-decoration-thickness: 8px;
   background-color: white;
 }
-h1 {
+/* h1 {
   font-family: serif;
-}
+  width: 100%;
+} */
 
 .name-focus {
   background-color: #320832;
@@ -100,6 +123,7 @@ h1 {
   font-family: "VictorMono-Regular";
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 40rem) {
