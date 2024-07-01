@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "VictorMono-Regular";
+  font-weight: 400;
+  src: url(./VictorMono-Regular.woff2);
+  font-display: swap;
+}
+
+/* Main Styles */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "VictorMono-Regular";
+  text-align: center;
+  background-color: #222;
+  color: white;
+  line-height: 1.5;
+}
+
+.image-container > img {
+  width: 100%;
+}
+.goals-in-tech {
+  display: grid;
+  gap: 1em;
+  padding: 0.5em 1em;
+}
+
+.focus {
+  /* color: #b766b7; */
+  color: #320832;
+  font-weight: 700;
+  font-family: serif;
+  font-size: 1.25rem;
+  background-color: #cb0f7a;
+  padding: 0.25em 1em;
+  line-height: 1.5;
+}
+
+.title-heading {
+  display: flex;
+  margin: 0 auto;
+  color: #cb0f7a;
+  background-color: #320832;
+  padding: 0.25em 1em;
+  font-family: serif;
+}
+
+header {
+  display: grid;
+  gap: 2em;
+}
+
+footer {
+  background-color: #320832;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1em;
+  gap: 2.5em;
+}
+
+footer > a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1em;
+  transition: all 0.5s ease-in-out;
+  font-weight: 700;
+}
+
+footer > a:is(:hover, :active, :focus) {
+  color: #cb0f7a;
+  text-decoration: overline;
+  text-decoration-color: black;
+  text-decoration-thickness: 8px;
+  background-color: white;
+}
+h1 {
+  font-family: serif;
+}
+
+.name-focus {
+  background-color: #320832;
+  color: #dcd813;
+  padding: 0.5em 1em;
+  font-family: "VictorMono-Regular";
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 40rem) {
+  footer {
+    flex-direction: row;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5em;
+    align-items: center;
+  }
+}
