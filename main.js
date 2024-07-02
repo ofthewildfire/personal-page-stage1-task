@@ -28,7 +28,7 @@ function updateTime() {
     mins
   ).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
 
-  currentTimeElement.textContent = formattedTime;
+  currentTimeElement.textContent = `${formattedTime} UTC`;
 }
 
 updateTime();
