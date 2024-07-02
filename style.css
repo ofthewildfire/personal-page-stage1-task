@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 2px solid gray; */
 }
 
 @font-face {
@@ -39,7 +38,6 @@ body {
 }
 
 .focus {
-  /* color: #b766b7; */
   color: #320832;
   font-weight: 700;
   font-family: serif;
@@ -108,10 +106,13 @@ footer > a:is(:hover, :active, :focus) {
   text-decoration-thickness: 8px;
   background-color: white;
 }
-/* h1 {
-  font-family: serif;
-  width: 100%;
-} */
+
+img {
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 2.5em auto;
+}
 
 .name-focus {
   background-color: #320832;
@@ -126,11 +127,5 @@ footer > a:is(:hover, :active, :focus) {
 @media screen and (min-width: 40rem) {
   footer {
     flex-direction: row;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5em;
-    align-items: center;
   }
 }
